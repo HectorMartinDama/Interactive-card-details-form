@@ -1,0 +1,415 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+
+$white: hsl(0, 0%, 100%);
+$widthInput: 300px;
+$border: 10px;
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+
+.error{
+    margin-top: -25px;
+    color: hsl(0, 100%, 66%);
+    
+
+    @media (min-width: 1440px){
+        margin-top: -35px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1440px){
+        flex-direction: row;
+    }
+
+}
+
+.button{
+    height: 50px;
+    background: hsl(278, 68%, 11%);
+    color: $white;
+    border-radius: $border;
+    border: none;
+    margin-top: 15px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    @media (min-width: 1440px){
+        width: 380px;
+    }
+}
+
+.formContainer{
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 235px);
+    @media (min-width: 1440px){
+        width: calc(100% - 480px);
+        height: 100vh;
+    }
+}
+
+
+.imgs{
+    height: 235px;
+    @media (min-width: 1440px){
+        width: 480px;
+    }
+    
+}
+
+.formComplete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        margin-bottom: 50px;
+    }
+
+    #title{
+        font-size: 30px;
+        letter-spacing: 4px;
+        color: hsl(278, 68%, 11%);
+    }
+
+
+    p{
+        margin-top: -10px;
+        color: hsl(279, 6%, 55%);
+
+    }
+
+
+    button{
+        margin-top: 40px;
+        width: $widthInput;
+    } 
+}
+
+label{
+    color: hsl(278, 68%, 11%);
+}
+
+.creditCardContainer{
+
+    p{
+        color: $white;
+        position: absolute;
+        z-index: 1;
+        font-size: 10px;
+    }
+
+    #name{
+        word-spacing: 10px;
+        padding-top: 235px;
+        padding-left: 35px;
+        letter-spacing: 2px;
+        @media (min-width: 1440px){
+            padding-top: 340px;
+            padding-left: 185px;
+            font-size: 15px;
+        }
+    }
+
+    #cardNumber{
+        padding-top: 200px;
+        padding-left: 35px;
+        font-size: 15px;
+        letter-spacing: 3px;
+        @media (min-width: 1440px){
+            padding-top: 280px;
+            padding-left: 185px;
+            font-size: 25px;
+        }
+    }
+
+    #expDate{
+        padding-top: 235px;
+        padding-left: 240px;
+        font-size: 10px;
+        @media (min-width: 1440px){
+            padding-top: 340px;
+            padding-left: 470px;
+            font-size: 15px;
+        }
+    }
+
+    #cvv{
+        padding-top: 92px;
+        padding-left: 290px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        @media (min-width: 1440px){
+            padding-top: 520px;
+            padding-left: 610px;
+            font-size: 15px;
+        }
+    }
+}
+
+
+.warning{
+    background: linear-gradient($white, $white) padding-box,
+              red border-box;
+        border-radius: 10px;
+        border: 1px solid transparent;
+}
+
+
+input{
+    height: 45px;
+    border-radius: $border;
+    border: 1px solid hsl(270, 3%, 87%);
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    @media (min-width: 1440px){
+        margin-bottom: 30px; 
+    }
+
+
+    &:focus{
+        background: linear-gradient($white, $white) padding-box,
+              linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
+        border-radius: 10px;
+        border: 1px solid transparent;
+    }
+
+    
+
+
+}
+
+
+
+
+// alinea los dos inputs en la misma linea
+.expDate{
+    display: flex;
+    flex-direction: row;
+
+    input{
+        width: 55px;
+        margin-right: 10px;
+        @media (min-width: 1440px){
+            margin-right: 15px;
+        }
+    }
+
+    #cvv{
+        width: 115px;
+        margin-left: 15px;
+        @media (min-width: 1440px){
+            width: 180px;
+            margin-left: 20px;
+        }
+    }
+}
+
+
+.errorsExpDate{
+    display: flex;
+    flex-direction: row;
+
+   p{
+    margin-right: 30px;
+   } 
+}
+
+
+
+
+// Columna de imagenes
+#gradiente{
+    width: 100vh;
+    height: 240px;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    @media (min-width: 1440px){
+        width: 480px;
+        height: 100vh;
+    }
+}
+
+#frontCard{
+    width: 286px;
+    height: 155px;
+    margin-left: 15px;
+    margin-top: 118px;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    @media (min-width: 1440px){
+        width: 450px;
+        height: 245px;
+        margin-top: 180px;
+        margin-left: 150px;
+    }
+}
+
+#backCard{
+    width: 286px;
+    height: 155px;
+    margin-top: 30px;
+    margin-left: 65px;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    @media (min-width: 1440px){
+        width: 450px;
+        height: 245px;
+        margin-top: 425px;
+        margin-left: 250px;
+        z-index: 1;
+    }
+}
+
+
+label{
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.exp-cvv{
+    padding-bottom: 10px; 
+
+    label{
+        margin-right: 33px;
+    }
+
+    @media (min-width: 1440px){
+        label{
+            margin-right: 50px;
+        }
+    }
+    
+    
+}
+
+
+
+
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: $white;
+    position: absolute;
+    z-index: 1;
+    margin-top: 135px;
+    margin-left: 35px;
+    @media (min-width: 1440px){
+        height: 50px;
+        width: 50px;
+        margin-top: 190px;
+        margin-left: 180px;
+    }
+}
+
+
+.circle2{
+    height: 10px;
+    width: 10px;        
+    margin-top: 144px;
+    margin-left: 75px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid $white;
+    @media (min-width: 1440px){
+        height: 20px;
+        width: 20px;
+        margin-top: 203px;
+        margin-left: 245px;
+    }
+}
+
+
+
+
+
+
+
+
+    
+    
+   
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+    
+    
+
+
+    
+
+    
+
+
+
+    
+    
+
+    
+
+   
+   
+
+
