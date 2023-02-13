@@ -6,8 +6,6 @@
 // Variables
 $white: hsl(0, 0%, 100%);
 $veryDarkViolet: hsl(278, 68%, 11%);
-$lightGrayishViolet: hsl(270, 3%, 87%);
-$darkGrayishViolet: hsl(279, 6%, 55%);
 $widthInput: 300px;
 $border: 10px;
 
@@ -103,7 +101,7 @@ form{
 
     p{
         margin-top: 10px;
-        color: $darkGrayishViolet;
+        color: hsl(279, 6%, 55%);
 
     }
 
@@ -190,7 +188,7 @@ form{
 input{
     height: 45px;
     border-radius: $border;
-    border: 1px solid $lightGrayishViolet;
+    border: 1px solid hsl(270, 3%, 87%);
     outline: none;
     padding-left: 10px;
     margin-bottom: 20px;
