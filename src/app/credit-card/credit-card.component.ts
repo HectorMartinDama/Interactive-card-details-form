@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
 
 
 interface CreditCard{
@@ -19,9 +18,8 @@ interface CreditCard{
 export class CreditCardComponent implements OnInit {
 
 
-  
 
-
+  // Variables
   formAddCreditCard!:FormGroup;
   public complete: Boolean= false;
   creditCard: CreditCard={
@@ -34,12 +32,10 @@ export class CreditCardComponent implements OnInit {
   
 
 
-
-
-
-  constructor(private fb: FormBuilder, private router: Router) { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    // start the validation
     this.formAddCreditCard= this.initForm();
   }
 
@@ -54,12 +50,13 @@ export class CreditCardComponent implements OnInit {
     })
   };
 
+
+
   addCreditCard(){
     if(this.formAddCreditCard.valid){
       this.complete= true;
     }
     this.formAddCreditCard.markAllAsTouched();
-    
   }
 
 
@@ -79,7 +76,7 @@ export class CreditCardComponent implements OnInit {
 
   changeCardNumber(e: any){
     if(e.length){
-      this.creditCard.cardNumber= e.toUpperCase();   
+      this.creditCard.cardNumber= e.toUpperCase();
     }else{
       this.creditCard.cardNumber='0000 0000 0000 0000'
     }
@@ -87,7 +84,7 @@ export class CreditCardComponent implements OnInit {
 
   changeExpDateM(e: any){
     if(e.length){
-      this.creditCard.expDateM= e.toUpperCase();   
+        this.creditCard.expDateM= e.toUpperCase();    
     }else{
       this.creditCard.expDateM='00'
     }
@@ -109,6 +106,8 @@ export class CreditCardComponent implements OnInit {
     }
   }
 
+
+  // enable only numbers in inputs
   onlyNumbers(event: any): boolean{
     const charCode= (event.which)?event.which: event.keyCode;
     if(charCode > 31 && (charCode < 48 || charCode > 57)){
@@ -118,6 +117,7 @@ export class CreditCardComponent implements OnInit {
   }
 
 
+  // enable only text in inputs
   onlyText(event: any): boolean{
     const charCode= (event.which)?event.which: event.keyCode;
     if(((charCode >= 65  && charCode < 90) || (event.keyCode > 96 && event.keyCode < 123) || charCode == 32)){
