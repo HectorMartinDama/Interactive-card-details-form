@@ -243,14 +243,12 @@ input{
 
 // left image column
 #gradiente{
-    //background-image: url('/assets/images/bg-main-mobile.png');
     height: 240px;
     width: 100vh;
     position: absolute;
     z-index: -1;
     pointer-events: none;
     @media (min-width: 1440px){
-       //background-image: url('/assets/images/bg-main-desktop.png');
         width: 480px;
         height: 100vh;
     }
