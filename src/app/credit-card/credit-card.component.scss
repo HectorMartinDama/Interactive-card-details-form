@@ -3,7 +3,6 @@
 
 
 
-// Variables
 $white: hsl(0, 0%, 100%);
 $veryDarkViolet: hsl(278, 68%, 11%);
 $widthInput: 300px;
@@ -17,7 +16,6 @@ $border: 10px;
     padding: 0;
 }
 
-// erros style under the inputs
 .error{
     margin-top: -15px;
     color: hsl(0, 100%, 66%);
@@ -40,7 +38,6 @@ $border: 10px;
     }
 }
 
-// style button form
 .button{
     height: 50px;
     background: $veryDarkViolet;
@@ -115,7 +112,6 @@ form{
 
 
 
-// put the inputs in the card images
 .creditCardContainer{
 
     p{
@@ -176,7 +172,6 @@ form{
     }
 }
 
-// style error input
 .warning{
     background: linear-gradient($white, $white) padding-box,
               red border-box;
@@ -207,7 +202,6 @@ input{
 
 
 
-// align the ExpDate and Cvv in row
 .expDate{
     display: flex;
     flex-direction: row;
@@ -230,7 +224,6 @@ input{
     }
 }
 
-// align the ExpDate and Cvv errors in row
 .errorsExpDate{
     display: flex;
     flex-direction: row;
@@ -241,9 +234,6 @@ input{
 }
 
 
-
-
-// left image column
 #gradiente{
     background-image: url('/assets/images/bg-main-mobile.png');
     height: 240px;
