@@ -41,10 +41,10 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Angular](https://reactjs.org/) - Angular framework
-- [SASS/SCSS](https://nextjs.org/) - SASS
+- [Angular](https://angular.io/) - Angular framework
+- [SASS/SCSS](https://sass-lang.com/) - SASS
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/HectorMartinDama)
-- Linkedin - [@yourusername](http://linkedin.com/in/héctor-martín-a88a761a2)
+- Frontend Mentor - [@HectorMartinDama](https://www.frontendmentor.io/profile/HectorMartinDama)
+- Linkedin - [@Héctor Martín](http://linkedin.com/in/héctor-martín-a88a761a2)
