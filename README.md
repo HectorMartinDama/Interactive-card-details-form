@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/HectorMartinDama/Interactive-card-details-form)
-- Live Site URL: [Add live site URL here](https://interactive-card-details-form-liard-eight.vercel.app/)
+- Solution URL: [here](https://github.com/HectorMartinDama/Interactive-card-details-form)
+- Live Site URL: [here](https://interactive-card-details-form-liard-eight.vercel.app/)
 
 ### Built with
 
